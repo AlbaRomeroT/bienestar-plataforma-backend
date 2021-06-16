@@ -1,0 +1,38 @@
+{
+  "name": "sequoia_test",
+  "version": "1.0.0",
+  "description": "Sequoia project which contains the automation testing scenarios to ensure the quality of sequoia_aws project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mkdir report; cucumber-js src/bienestar/features -r src/bienestar/steps -f summary -f json:report/cucumber_report.json",
+    "apikeys-output": "aws apigateway get-api-keys --include-values > apikeys-output.json",
+    "stacks-output": "aws cloudformation describe-stacks > stacks-output.json",
+    "apigateway-output": "aws apigateway get-rest-apis > apigateway-output.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sequoiagrp/sequoia_test.git"
+  },
+  "keywords": [
+    "nodejs",
+    "cucumber",
+    "pactumjs",
+    "pactum",
+    "aws",
+    "sequoia"
+  ],
+  "author": "Jonathan Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sequoiagrp/sequoia_test/issues"
+  },
+  "homepage": "https://github.com/Sequoiagrp/sequoia_test#readme",
+  "dependencies": {
+    "yargs": "17.0.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "7.2.1",
+    "cucumber-html-reporter": "5.4.0",
+    "pactum": "3.0.15"
+  }
+}
