@@ -18,7 +18,7 @@ BeforeAll(() => {
 
 Before(() => {
     spec = pactum.spec();
-    spec.withRequestTimeout(15000);
+    spec.withRequestTimeout(25000);
     //Place headers of the request here
     spec.withHeaders("x-bc-wm", "true");
     spec.withHeaders("Content-Type", "application/json");
