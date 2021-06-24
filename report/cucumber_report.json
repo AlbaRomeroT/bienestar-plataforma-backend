@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1869000000
+              "duration": 1612000000
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 1000000
             }
           },
           {
@@ -102,7 +102,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 11000000
             }
           },
           {
@@ -140,6 +140,93 @@
     "elements": [
       {
         "description": "",
+        "id": "bienestar-login-services;make-a-get-request-to-get--summary",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "make a get request to get  summary",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A transaction GET event with the path /bienestar/summary",
+            "match": {
+              "location": "src/bienestar/steps/healthcare.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I receive a response",
+            "match": {
+              "location": "src/bienestar/steps/healthcare.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src/bienestar/steps/healthcare.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "bienestar-login-services",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Bienestar login Services",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "src/bienestar/features/activity.feature"
+  },
+  {
+    "description": "  In order process a order\n  As a developer\n  I want to make GET request through REST API",
+    "elements": [
+      {
+        "description": "",
         "id": "bienestar-login-services;make-a-get-request-to-get-healthcare-score",
         "keyword": "Scenario",
         "line": 7,
@@ -163,7 +250,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -189,7 +276,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1638000000
+              "duration": 1342000000
             }
           },
           {
@@ -202,7 +289,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -238,7 +325,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           },
           {
@@ -270,5 +357,92 @@
       }
     ],
     "uri": "src/bienestar/features/healthcare.feature"
+  },
+  {
+    "description": "  In order process a order\n  As a developer\n  I want to make GET request through REST API",
+    "elements": [
+      {
+        "description": "",
+        "id": "bienestar-login-services;make-a-get-bad-request-to-get-activity",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "make a get bad request to get activity",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A transaction GET event with the path /bienestar/activity",
+            "match": {
+              "location": "src/bienestar/steps/healthcare.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I receive a response",
+            "match": {
+              "location": "src/bienestar/steps/healthcare.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 508000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response code 400",
+            "match": {
+              "location": "src/bienestar/steps/healthcare.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "bienestar-login-services",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Bienestar login Services",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "src/bienestar/features/summary.feature"
   }
 ]
