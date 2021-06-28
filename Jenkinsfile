@@ -7,7 +7,7 @@ pipeline {
     
         stage('Preparation') { // for display purposes
             steps {
-                git branch: 'develop', url: 'https://github.com/AlbaRomeroT/bienestar-plataforma-backend.git'
+                git branch: 'master', url: 'https://github.com/AlbaRomeroT/bienestar-plataforma-backend.git'
             }
      
         }
