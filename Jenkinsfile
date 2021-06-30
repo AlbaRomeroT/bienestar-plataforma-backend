@@ -29,8 +29,9 @@ pipeline {
         }
         stage("results"){
              steps {
-                cucumber fileIncludePattern: 'cucumber.json', sortingMethod: 'ALPHABETICAL' 
+                cucumber fileIncludePattern: 'report/cucumber_report.json', sortingMethod: 'ALPHABETICAL' 
             }
         }
     }
+}
 }
