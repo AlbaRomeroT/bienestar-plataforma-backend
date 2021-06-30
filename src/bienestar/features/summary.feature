@@ -1,5 +1,5 @@
-@smoke
-Feature: Bienestar login Services
+@smoke @bienestar @summary @c1
+Feature: Bienestar Summary Services
   In order process a order
   As a developer
   I want to make GET request through REST API

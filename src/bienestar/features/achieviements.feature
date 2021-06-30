@@ -1,5 +1,5 @@
-@smoke
-Feature: Bienestar login Services
+@smoke @bienestar @achieviements @c1
+Feature: Bienestar Achieviement Services 
   In order process a order
   As a developer
   I want to make GET request through REST API for the achievement´s service
