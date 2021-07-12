@@ -7,5 +7,5 @@ Feature: Bienestar Activity Services
   Scenario: make a get request to get  summary
     Given A transaction GET event with the path /bienestar/summary
     When I receive a response
-    Then I get response code 400
+    Then I get response code 200
  
